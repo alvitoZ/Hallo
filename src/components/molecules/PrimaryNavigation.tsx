@@ -16,21 +16,26 @@ const PrimaryNavigation = () => {
           text-lg text-gray-700
         "
       >
-        <div className="flex justify-between">
-          <div className="md:gap-8 cursor-pointer md:hidden block">
+        <div className="flex justify-between md:border-0 border-b-[3px]">
+          <div className="gap-8 cursor-pointer md:hidden flex">
             <div className="">
-              <Image src="/images/s.jpg" alt="s" width={50} height={50} />
+              <Image src="/images/logo.png" alt="s" width={50} height={50} />
             </div>
             <div>
-              <p className="font-bold">huruf1</p>
-              <p className="font-bold">huruf2</p>
+              <p className="font-bold text-blue-700">huruf1 !</p>
+              <p className="font-medium text-xs">huruf2</p>
             </div>
           </div>
           <div
-            className={`h-6 w-6 cursor-pointer md:hidden block`}
+            className={`h-16 w-8 cursor-pointer md:hidden flex items-center`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <Image src="/images/f.jpg" alt="s" width={25} height={25} />
+            <Image
+              src="/static/svgs/dehaze.svg"
+              alt="s"
+              width={25}
+              height={25}
+            />
           </div>
         </div>
 
@@ -53,11 +58,11 @@ const PrimaryNavigation = () => {
           >
             <div className="md:flex md:flex-row md:gap-8 hidden">
               <div className="">
-                <Image src="/images/s.jpg" alt="s" width={50} height={50} />
+                <Image src="/images/logo.png" alt="s" width={50} height={50} />
               </div>
               <div>
-                <p className="font-bold">huruf1</p>
-                <p className="font-bold">huruf2</p>
+                <p className="font-bold text-blue-700">huruf1 !</p>
+                <p className="font-medium text-xs">huruf2</p>
               </div>
             </div>
             {/* <div className="hidden md:block">
@@ -76,7 +81,7 @@ const PrimaryNavigation = () => {
                 </p>
               </div>
               <div>
-                <Image src="/images/f.jpg" alt="s" width={25} height={25} />
+                <Image src="/images/loupe.png" alt="s" width={25} height={25} />
               </div>
             </div>
           </div>

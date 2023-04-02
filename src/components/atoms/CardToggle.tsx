@@ -3,15 +3,18 @@ import Image from "next/image";
 import styles from "./CardToggle.module.css";
 import { useState } from "react";
 import ButtonToggle from "./ButtonToggle";
+import { log } from "console";
 
 interface Card {
-  image: string;
-  caption: string;
-  title: string;
-  action?: (e: React.MouseEvent) => void;
+  image?: string;
+  caption?: string;
+  title?: string;
+  action?: () => void;
 }
 
-const CardToggle = () => {
+type Props = Card;
+
+const CardToggle = (props: Props) => {
   return (
     <div className="h-auto hover:scale-110 transition duration-500">
       <div className="flex justify-between flex-col gap-24 w-[18rem] py-11">
@@ -20,7 +23,8 @@ const CardToggle = () => {
         </div>
         <div>
           <div className="py-5">
-            <ButtonToggle />
+            {/* <ButtonToggle action={() => coba2()} /> */}
+            <ButtonToggle action={() => props.action!()} />
           </div>
           <div className="w-auto">
             <div className="font-semibold text-2xl">TYPOGRAPHY</div>

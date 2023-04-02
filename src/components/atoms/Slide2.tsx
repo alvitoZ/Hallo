@@ -16,7 +16,7 @@ const Slide2 = () => {
           <p className="w-[18rem] text-[16px] font-semibold leading-4">
             Gurame is a ikan English Speaking Virtual ldr Binomo
           </p>
-          <Image src="/images/f.jpg" alt="" width={30} height={30} />
+          <div className="w-[30px] h-[30px] bg-blue-800 hover:bg-red-600 transition duration-700"></div>
         </div>
         <div>
           <p className="text-blue-500 font-bold text-end">7364</p>

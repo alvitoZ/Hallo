@@ -18,14 +18,14 @@ const BlankTemplate: NextPage<props> = ({ children }) => {
     }
     return path;
   };
-  // console.log(myPath());
+  console.log(myPath());
 
   return (
     <>
       <div className="min-h-screen flex w-full flex-col dark:bg-[#1a202c] px-[6%]">
         <CommonSEO
           title={myPath()}
-          description="Description of Create Next Page by GG"
+          description="Description of Create Next Page by aing"
         />
         {children}
       </div>

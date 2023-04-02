@@ -16,7 +16,12 @@ type Props = Card;
 const CardBG = (props: Props) => {
   return (
     <div
-      className={`flex items-center hover:scale-110 transition duration-700 ${props.bgColor}`}
+      style={
+        props.image
+          ? { backgroundImage: `url(/uploads/${props.image}.png)` }
+          : {}
+      }
+      className={`flex items-center hover:rotate-2 transition duration-700 ${props.bgColor}`}
     >
       <div className="pl-10 flex items-start gap-20 flex-col w-[18rem] py-11">
         <div className="">
